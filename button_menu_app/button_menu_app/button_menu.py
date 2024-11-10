@@ -131,11 +131,10 @@ class FloatingControlWindow(QMainWindow):
             # Get the monitor's physical and logical dimensions
             physical_width = abs(info['Monitor'][2] - info['Monitor'][0])
             logical_width = abs(info['Work'][2] - info['Work'][0])
-            print('physical_width:', physical_width)
-            print('logical_width:', logical_width)
+
             
             # Calculate scaling factor
-            scaling_factor = logical_width / physical_width
+
             scaling_factor = logical_width / 1920
             return scaling_factor
         except Exception:
@@ -144,7 +143,7 @@ class FloatingControlWindow(QMainWindow):
 
     def create_circular_button(self, text, special_button=None):
         scaling = self.get_display_scaling()
-        print('For creating buttons, scaling:', scaling)  
+        #print('For creating buttons, scaling:', scaling)  
         
         # Scale base sizes
         base_button_size = 80
@@ -283,7 +282,7 @@ class FloatingControlWindow(QMainWindow):
             
             # Update window and button size based on scaling
             scaling = self.get_display_scaling()
-            print('For capture target, scaling:', scaling)
+
             window_size = self.size()
             base_button_size = 80
             base_window_height = 400
@@ -434,7 +433,7 @@ class FloatingControlWindow(QMainWindow):
                 self.target_window = None
                 return
 
-            print('scrolling up' if scroll_up else 'scrolling down')
+            #print('scrolling up' if scroll_up else 'scrolling down')
             
             # Get the target window's position
             rect = win32gui.GetWindowRect(self.target_window)
