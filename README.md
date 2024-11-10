@@ -52,6 +52,7 @@ button_menu_launch.bat
 ```
 The executable will be available in `installer/ButtonMenu.exe`
 
+double click on `installer/Setup_Autostart.bat`
 
 ## Usage
 
