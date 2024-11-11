@@ -1,5 +1,6 @@
 # AmirACLE - Accessible Computer Control Tool
 A specialized floating control interface designed to enhance computer accessibility for users with limited mobility, developed during Hackahealth [Project Amir - 2024 — HackaHealth](https://www.hackahealth.ch/project-amir-2024) to assist Amir, a DJ and producer born with Duchenne Muscular Dystrophy, this tool aims to make daily computer interactions more efficient and comfortable.
+
 <p align="center" width="100%">
   <img src='images/gif_demo.gif' alt='demo' width = "600">
 </p>
@@ -33,6 +34,7 @@ ButtonMenu was created to address the challenges faced by users who rely on mout
 <p align="center" width="100%">
   <img src='images/UI_example.png' alt='ButtonMenu Interface' width = "200">
 </p>
+
 ### Prerequisites
 - Python 3.7+
 - PyQt5
@@ -59,7 +61,8 @@ button_menu_launch.bat
 ```
 The executable will be available in `installer/ButtonMenu.exe`
 
-double click on `installer/Setup_Autostart.bat`
+
+
 
 ## Usage
 
